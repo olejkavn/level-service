@@ -1,0 +1,33 @@
+server:
+  port: 8080
+management:
+  server:
+    port: 8081
+spring:
+  config:
+    import: "optional:configserver:"
+  application:
+    name: level-service
+  cloud:
+    config:
+      enabled: true
+      fail-fast: true
+      discovery:
+        enabled: true
+        service-id: CONFIG-SERVER
+  profiles:
+    active: live
+eureka:
+  client:
+    serviceUrl:
+#      defaultZone: http://206.189.249.111/eureka/eureka
+      defaultZone: http://eureka:8080/eureka
+    register-with-eureka: true
+#my-awesome-property: asd
+#spring.cloud.config.failFast=true
+#spring.cloud.config.discovery.serviceId=CONFIGURATION-SERVICE
+#spring.cloud.config.discovery.enabled=true
+#spring.cloud.config.enabled=true
+#spring.cloud.discovery.enabled=true
+
+
