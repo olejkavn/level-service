@@ -4,8 +4,14 @@ management:
   server:
     port: 8081
 spring:
+  datasource:
+    url: jdbc:mariadb://mariadb:3306/level_db
+    username: otymkovskyi
+    password: test
   config:
     import: "optional:configserver:"
+  liquibase:
+    change-log: classpath:liquibase/db/changelog/changelog-current.xml
   application:
     name: level-service
   cloud:

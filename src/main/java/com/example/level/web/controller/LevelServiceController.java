@@ -1,4 +1,4 @@
-package com.example.level.controller;
+package com.example.level.web.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;

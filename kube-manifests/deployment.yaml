@@ -56,3 +56,5 @@ spec:
       schedulerName: default-scheduler
       securityContext: {}
       terminationGracePeriodSeconds: 30
+
+  #helm install mariadb bitnami/mariadb -f values-production.yaml --set rootUser.password=test --set replication.password=test --set db.user=level --set db.password=test --set db.name=level_db
