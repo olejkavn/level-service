@@ -24,6 +24,8 @@ spring:
   profiles:
     active: live
 eureka:
+  instance:
+    preferIpAddress: true
   client:
     serviceUrl:
 #      defaultZone: http://206.189.249.111/eureka/eureka

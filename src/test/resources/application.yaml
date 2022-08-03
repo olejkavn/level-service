@@ -21,3 +21,8 @@ eureka:
     enabled: false
 
 my-awesome-property: test
+level:
+  config:
+    requiredExp:
+      1: 2
+      2: 2

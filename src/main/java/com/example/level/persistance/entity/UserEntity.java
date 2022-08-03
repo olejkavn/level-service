@@ -24,8 +24,10 @@ public class UserEntity {
     private long userId;
 
     @Column(name = "level")
-    private long level;
+    @Builder.Default
+    private long level = 1;
 
     @Column(name = "exp")
-    private long exp;
+    @Builder.Default
+    private long exp = 0;
 }
