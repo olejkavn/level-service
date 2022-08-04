@@ -4,6 +4,8 @@ management:
   server:
     port: 8081
 spring:
+  kafka:
+    bootstrap-servers: kafka:9092
   application:
     name: level-service
   datasource:
@@ -26,3 +28,5 @@ level:
     requiredExp:
       1: 2
       2: 2
+  changed:
+    topic: level_up

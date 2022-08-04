@@ -4,6 +4,8 @@ management:
   server:
     port: 8081
 spring:
+  kafka:
+    bootstrap-servers: kafka:9092
   datasource:
     url: jdbc:mariadb://mariadb:3306/level_db
     username: otymkovskyi
@@ -31,6 +33,9 @@ eureka:
 #      defaultZone: http://206.189.249.111/eureka/eureka
       defaultZone: http://eureka:8080/eureka
     register-with-eureka: true
+level:
+  changed:
+    topic: level_up
 #my-awesome-property: asd
 #spring.cloud.config.failFast=true
 #spring.cloud.config.discovery.serviceId=CONFIGURATION-SERVICE

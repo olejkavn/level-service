@@ -9,5 +9,5 @@ public class LevelChangedEvent {
 
     long userId;
     long newLevel;
-
+    long timestamp;
 }
